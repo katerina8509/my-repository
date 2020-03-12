@@ -208,12 +208,10 @@ padding: 15px;
 color: rgba(255, 255, 255, 0.83);
 font-size: 20px;
 }
-.banner-vertical-text {position: relative;
-	border: solid 1px red;
-	padding: 0px 40px;
-}
+
 .vertical-text {transform: rotate(90deg);
-	padding-top: 40px;
+	position: absolute;
+	padding-top: 30px;
 	left:0;
 	
 }
