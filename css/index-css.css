@@ -218,10 +218,10 @@ font-size: 20px;
 .statistics {width: 100%;
 }
 .statistics-inner {display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 }
-.statistics-card {background-color: silver;
-width: 100%}
+.statistics-card {background-color: rgba(208, 208, 208, 0.4);}
 .statistics-block {flex-basis: 50%;
 }
 .statistics-right { padding: 40px 50px;
@@ -262,49 +262,62 @@ width: 100%}
 	justify-content: flex-start;
 }
 .search-appartaments-link {
-	padding-left: 80px;
+	margin-left: 80px;
 }
 
 .steps-list {display: flex;
-	padding: 10px 20px;
-	flex-wrap: nowrap;
-	counter-reset: list heading ;
+	padding-right: 15px;
+	flex-wrap:wrap;
+	counter-reset: list heading;
 	justify-content: flex-start;
-	list-style-type: none; 
 	overflow: hidden;
 	font-family: "Montserrat Bold", sans-serif;
 }
-.steps-item {	margin-right: 20px;
-	padding: 20px;
-}
+.steps-item {display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	padding: 15px 20px;
+	}
 .steps-item:before {
 counter-increment: list;
 content: "0"counter(list);
-font-size: 160px;
+font-size: 150px;
+padding-right:10px;
 font-weight: bold;
+padding-bottom: 55px;
+opacity: 0.3;
 }
 h4.title-block:before {counter-increment: heading;
 content: "0"counter(heading);
+overflow: hidden;
 padding-right: 10px;
 }
 .steps-link {color: black;
 	font-family: "Montserrat Bold", sans-serif;
 	font-size: 16px;
 	font-weight: 600;
+	padding: 5px 0px;
 	text-decoration: none;
-	padding-bottom: 5px;
+	margin-top: auto;
+	align-self: flex-start;
 	border-bottom: 2px solid black;
+}
+.steps-content-block {padding-bottom: 10px;
+	padding-left: 25px;
 }
 .steps-item-activ {background-color: #ffcc01;
 color: white;
+	
 }
 .steps-link-activ {color: white;
+margin-top: auto;
+align-self:flex-start;
 border-bottom: 2px solid white;
 }
 
-.steps-item-block {margin-left: 40px;
-	padding-top: 10px;
-}
+
 .services-section-img {
 	width: 100%;
 	
@@ -553,7 +566,7 @@ font-size: 15px;
 font-weight:500;
 line-height: 20px;
 }
-	.container {padding: 0px 5px; 
+	.container {padding: 0px 10px; 
 width: 100%;
 margin: 0 auto;
 }
@@ -564,9 +577,6 @@ margin: 0 auto;
 	font-size: 15px;
 }
 	.title-section {font-size: 24px;
-	text-align: left;
-	margin-top: 20px;
-	max-width: 50% ;
 	}
 	.header-inner {height: 60px;
 	justify-content: space-around;
@@ -583,9 +593,7 @@ margin: 0 auto;
 		display: block;
 		width: 30px;
 		height: 30px;
-		top: 0;
-		right: 0;
-	}
+		}
 	.burger-span {position: absolute;
 		margin-left: 10px;
 		background-color:#1f373d;
@@ -691,7 +699,13 @@ margin: 0 auto;
 }
 .main-banner-inner {margin: 0 auto;	}
 .statistics-block {flex-basis: 100%;
-	margin: 0 auto;
 	}
-	.statistics-left {width: 100%;}
+	
+	.steps-item {width: 100%;
+		overflow: hidden;
+	}
+	.services-content {flex-direction:column;
+	}
+	.services-section{width: 100%;}
+	.footer-menu-nav-item {width: 25%;}
 	}
